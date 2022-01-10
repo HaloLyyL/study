@@ -11,8 +11,8 @@ $ ./3rd/lua/lua examples/client.lua  这里要用5.4的Lua版本，否则要报�
 local skynet = require "skynet" 
 
 --conf配置信息已经写入到注册表中，通过该函数获取注册表的变量值
-skynet.getenv(varName) 
---设置注册表信息，varValue一般是number或string，但是不能设置已经存在的varname
+skynet.getenv(varName)
+-设置注册表信息，varValue一般是number或string，但是不能设置已经存在的varname
 skynet.setenv(varName, varValue) 
 --打印函数
 skynet.error(...)
